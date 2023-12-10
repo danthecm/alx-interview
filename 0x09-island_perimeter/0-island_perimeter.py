@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-""" Island Perimeter """
+"""
+Calculates Island perimeter
+"""
 
 
 def island_perimeter(grid):
-    """ Function that returns the perimeter of the island described in grid """
+    """
+    Uses a matrix of 1 and 0 to calculate perimeter
+    - The 0 represents water and 1 represents land
+    - There is either an island or no island
+    - No lakes are present (No 0 in middle of 1's)
+    """
     perimeter = 0
     if type(grid) is not list:
         return 0
